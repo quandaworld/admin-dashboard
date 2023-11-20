@@ -6,33 +6,48 @@
   <title>Quandaboard</title>
   <script src="https://kit.fontawesome.com/71382635df.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="styles.css">
-</head>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,701,501,401,400&f[]=cabinet-grotesk@800&f[]=rosaline@400&display=swap" rel="stylesheet">
 <body>
   <div class="container">
     <div class="sidebar">
-      <div class="icons">
-        <i class="fa-solid fa-bars"></i>
-        <ul>
-          <li><i class="fa-solid fa-house"></i></li>
-          <li><i class="fa-regular fa-address-card"></i></li>
-          <li><i class="fa-regular fa-message"></i></li>
-          <li><i class="fa-regular fa-clock"></i></li>
-          <li><i class="fa-solid fa-list-check"></i></li>
-          <li><i class="fa-solid fa-user-group"></i></li>
-        </ul>
-        <ul>
-          <li><i class="fa-solid fa-gear"></i></li>
-          <li><i class="fa-regular fa-circle-question"></i></li>
-          <li><i class="fa-solid fa-shield"></i></li>
-        </ul>
+      <div id="dashboard"><i class="fa-solid fa-bars fa-fw"></i>Dashboard</div>
+      <ul>
+        <li><i class="fa-solid fa-house fa-fw"></i>Home</li>
+        <li><i class="fa-regular fa-address-card fa-fw"></i>Profile</li>
+        <li><i class="fa-regular fa-message fa-fw"></i>Messages</li>
+        <li><i class="fa-regular fa-clock fa-fw"></i>History</li>
+        <li><i class="fa-solid fa-list-check fa-fw"></i>Tasks</li>
+        <li><i class="fa-solid fa-user-group fa-fw"></i>Communities</li>
+      </ul>
+      <ul>
+        <li><i class="fa-solid fa-gear fa-fw"></i>Settings</li>
+        <li><i class="fa-regular fa-circle-question fa-fw"></i>Support</li>
+        <li><i class="fa-solid fa-shield fa-fw"></i>Privacy</li>
+      </ul>
+    </div>
+
+    <div class="header">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="search-box">
       </div>
-
-      <div class="nav-items">
-
+      <div class="user">
+        <i class="fa-regular fa-bell"></i>
+        <img src="./images/icon1.jpg" alt="A profile image">
+        <p>Peter Parker</p>
+      </div>
+      <div class="welcome">
+        <img src="./images/icon1.jpg" alt="A profile image">
+        <p>Hi there,</p>
+        <p>Peter Parker (@peter)</p>
+      </div>
+      <div class="buttons">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
       </div>
     </div>
 
-    <div class="header">Quan Nguyen</div>
     <div class="main-content">Your Projects</div>
     <!-- <footer>
       Copyright &copy <script>document.write(new Date().getFullYear())</script>
